@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 const menuData = {
   Veg: [
@@ -107,9 +109,11 @@ const Menu = () => {
         </div>
         {/* ORDER NOW Button */}
         <div className="mt-10 text-center">
+          <Link to="/order">
           <button className="bg-[#FDB72C] text-black font-semibold py-3 px-6 outline outline-1 outline-[#FDB72C] outline-offset-2 shadow-lg transition duration-300 hover:text-white">
             ORDER NOW
           </button>
+          </Link>
         </div>
       </div>
     </section>
